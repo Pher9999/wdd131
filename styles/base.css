@@ -1,4 +1,11 @@
 
-span{
+.funnel-sans-font {
+  font-family: "Funnel Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+span {
     display:block;
 }
