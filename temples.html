@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WDD 131 - Temples Gallery</title>
+        <meta name="description" content="Temples gallery.">
+        <meta name="author" content="Chris Riordan">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&amp;display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/temples.css">
+        <link rel="stylesheet" href="styles/temples-large.css">
+        <script src="scripts/getdates.js" defer></script>
+        <script src="scripts/temples.js" defer></script>
+    </head>
+    <body>
+         <header>
+        <span class="site-title">Temple Album</span>
+        <button id="menu-button" aria-label="Open Menu">☰</button>
+        <nav class="nav-menu" id="nav-menu">
+            <a href="">Home</a>
+            <a href="">Old</a>
+            <a href="">New</a>
+            <a href="">Large</a>
+            <a href="">Small</a>
+        </nav>
+    </header>
+        <main>
+        <h1>Home</h1>
+
+        <div class="temple-grid">
+            <figure class="temple-card">
+                <img src="images/boston_temple_lds.jpeg" alt="Boston, Massachusetts Temple">
+                <figcaption>Boston, Massachusetts </figcaption>
+            </figure>
+            <figure class="temple-card">
+                <img src="images/atlanta_temple_lds.jpeg" alt="Atlanta, Georgia Temple">
+                <figcaption>Atlanta, Georgia </figcaption>
+            </figure>
+            <figure class="temple-card">
+                <img src="images/memphis_temple_lds.jpeg" alt="Memphis, TN Temple">
+                <figcaption>Memphis,Tennessee </figcaption>
+            </figure>
+            <figure class="temple-card">
+                <img src="images/baton_rouge_temple_lds.jpeg" alt="Baton Rouge, LA Temple">
+                <figcaption>Baton Rouge, Louisiana </figcaption>
+            </figure>
+            <figure class="temple-card">
+                <img src="images/hartford_connecticut_temples_exterior_steeples_clouds.jpeg" alt="Hartford, CT Temple">
+                <figcaption>Hartford, Connecticut </figcaption>
+            </figure>
+            <figure class="temple-card">
+                <img src="images/manhattan_temple_lds.jpeg" alt="Manhattan, New York Temple">
+                <figcaption>Manhattan, New York </figcaption>
+            </figure>
+            <figure class="temple-card">
+                <img src="images/kirtland_temple.jpeg" alt="Kirtland, Ohio Temple">
+                <figcaption>Kirtland, Ohio</figcaption>
+            </figure>
+            <figure class="temple-card">
+                <img src="images/nauvoo_temple_lds.jpeg" alt="Nauvoo, Illinois Temple">
+                <figcaption>Nauvoo, Illinois</figcaption>
+            </figure>
+            <figure class="temple-card">
+                <img src="images/salt_lake_temple_lds.jpeg" alt="Salt Lake City, Utah Temple">
+                <figcaption>Salt Lake City, Utah</figcaption>
+            </figure>
+        </div>
+    </main>
+    <footer>
+        <p><span id="currentyear"></span> Chris Riordan, USA </p>
+        <p id="lastmodified"></p>
+    </footer>
+</body>
+</html>
