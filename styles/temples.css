@@ -19,7 +19,7 @@ body {
 
     font-family: 'Funnel Sans', sans-serif;
     background-color: var(--background-color);
-    color: var(--text-color);
+    /*color: var(--text-color); */
 
 }
 header {
@@ -111,7 +111,7 @@ main h1 {
 }
 .temple-card figcaption {
     margin: 15px 10px;
-    color: var(--gallery-text-color);
+    /*color: var(--gallery-text-color);*/
     font-size: 1.05rem;
     font-weight: 500;
 }
