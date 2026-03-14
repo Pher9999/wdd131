@@ -40,6 +40,15 @@ header .site-title {
     font-weight: 700;
 }
 
+.site-title a {
+    font-family: 'Funnel Sans', sans-serif;
+    color: var(--text-color);
+    text-decoration: none;
+}
+.site-title a:hover {
+    background-color: var(--primary-color);
+}
+
 #menu-button {
     background: none;
     border: none;
