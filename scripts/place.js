@@ -1,7 +1,9 @@
 const today = new Date();
 
 document.getElementById("currentyear").innerHTML = `©${today.getFullYear()}`;
+
 document.getElementById("lastmodified").innerHTML = `Last Modified: ${document.lastModified}`;
+
 document.getElementById("windChill").innerHTML = `${calculateWindChill(74, 3)}`;
 
 /* hamburger button */

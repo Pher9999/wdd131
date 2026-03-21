@@ -21,7 +21,7 @@ footer {
 
 header h1 {
     padding: 2.5rem;
-    color: rgb(255, 255, 255);
+    color: var(--text-color);
     font-weight: bold;
     font-size: 45px;
 }
@@ -40,7 +40,7 @@ article {
 }
 
 .weather {
-    border-top: 1px solid rgb(205, 205, 205);
+    border-top: 1px solid var(--card-background);
 }
 
 .weather img {
@@ -52,7 +52,7 @@ article {
 footer {
     padding: 1.5rem;
     border-top: 1rem solid var(--secondary-color);
-    color: rgb(255, 255, 255);
+    color: var(--text-color);
 }
 
 footer p {
@@ -69,7 +69,7 @@ footer p {
         position: absolute;
         top: 200px;
         left: 50px;
-        background-color: rgba(255, 255, 255, 0.925);
+        background-color: var(--card-background);
         box-shadow: 0 0 25px black;
         padding: 2rem;
     }
@@ -79,7 +79,7 @@ footer p {
         right: 50px;
         bottom: -120px;
         border-top: 0;
-        background-color: rgba(255, 255, 255, 0.925);
+        background-color: var(--card-background);
         box-shadow: 0 0 25px black;
         padding: 2rem;
         width: 200px;
