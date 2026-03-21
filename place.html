@@ -18,10 +18,35 @@
 
 <body>
     <header>
-
+        <h1>United States of America</h1>
     </header>
-
     <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/washingtondc_hero_large.webp" media="(min-width: 1000px)">
+                <img src="images/washingtondc_hero_small.webp" alt="A picture of a Washington dc." width="400"
+                    height="200">
+            </picture>
+        </div>
+
+        <article class="data">
+            <h2>Data</h2>
+            <p>Population: 331,449,281 (2020)</p>
+            <p>Capital: Washington, DC</p>
+            <p>Languages: English</p>
+            <p>Currency: US Dollar</p>
+            <p>Calling Code: +1</p>
+            <p>Internet TLD: .US</p>
+        </article>
+
+        <article class="weather">
+            <h2>Weather <span class="emoticon"></span></h2>
+            <img src="images/weather-sun.svg" alt="An icon of a cloud covering the sun halfway.">
+            <p>Temperature: 74°F</p>
+            <p>Conditions: Partly Sunny</p>
+            <p>Wind: 3 mph</p>
+            <p>Wind Chill: <span id="windChill"></span></p>
+        </article>
     </main>
     <footer>
         <p><span id="currentyear"></span> Chris Riordan | Mississippi, USA</p>
