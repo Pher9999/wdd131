@@ -22,8 +22,10 @@ body {
     /*color: var(--text-color); */
 
 }
+
 header {
-    background-color: var(--primary-color);;
+    background-color: var(--primary-color);
+    ;
     color: var(--text-color);
     display: flex;
     justify-content: space-between;
@@ -45,6 +47,7 @@ header .site-title {
     color: var(--text-color);
     text-decoration: none;
 }
+
 .site-title a:hover {
     background-color: var(--primary-color);
 }
@@ -56,6 +59,7 @@ header .site-title {
     font-size: 2rem;
     cursor: pointer;
 }
+
 .nav-menu {
     display: none;
     flex-direction: column;
@@ -66,9 +70,11 @@ header .site-title {
     background-color: var(--primary-color);
     text-align: center
 }
+
 .nav-menu.show {
     display: flex;
 }
+
 .nav-menu a {
     font-family: 'Funnel Sans', sans-serif;
     color: var(--text-color);
@@ -76,6 +82,7 @@ header .site-title {
     font-size: 1.1rem;
     padding: 15px 0;
 }
+
 .nav-menu a:hover {
     background-color: var(--primary-color);
 }
@@ -86,6 +93,7 @@ main {
     max-width: 1000px;
     margin: 0 auto;
 }
+
 main h1 {
     font-family: 'Funnel Sans', sans-serif;
     text-align: center;
@@ -93,12 +101,14 @@ main h1 {
     font-size: 1.8rem;
     color: var(--gallery-text-color);
 }
+
 .temple-grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 25px;
 }
-.temple-card {
+
+.temple-cards {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -107,22 +117,32 @@ main h1 {
     box-shadow: 0 4PX 10PX rgba(0, 0, 0, 0.08);
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 0 10px;
 }
-.temple-card:hover {
+
+.temple-cards:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
-.temple-card img {
+
+.temple-cards img {
     width: 100%;
     height: auto;
     aspect-ratio: 3 / 2;
     object-fit: cover;
 }
-.temple-card figcaption {
-    margin: 15px 10px;
-    /*color: var(--gallery-text-color);*/
-    font-size: 1.05rem;
+
+.temple-cards span {
+    margin: 0;
+    color: var(--gallery-text-color);
+    font-size: 1rem;
     font-weight: 500;
+}
+
+.temple-cards h3 {
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--gallery-text-color);
 }
 
 
