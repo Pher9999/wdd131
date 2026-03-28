@@ -1,0 +1,149 @@
+:root {
+
+    --primary-color: #08395f;
+    --secondary-color: #2e2c2c;
+    --background-color: #f4f4f4;
+    --card-background: #ffffff;
+    --text-color: #ffffff;
+    --gallery-text-color: #222;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: 'Funnel Sans', sans-serif;
+    background-color: var(--background-color);
+    /*color: var(--text-color); */
+
+}
+header {
+    background-color: var(--primary-color);;
+    color: var(--text-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+    position: relative;
+}
+
+header .site-title {
+    font-family: 'Funnel Sans', sans-serif;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.site-title a {
+    font-family: 'Funnel Sans', sans-serif;
+    color: var(--text-color);
+    text-decoration: none;
+}
+.site-title a:hover {
+    background-color: var(--primary-color);
+}
+
+#menu-button {
+    background: none;
+    border: none;
+    color: var(--text-color);
+    font-size: 2rem;
+    cursor: pointer;
+}
+.nav-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--primary-color);
+    text-align: center
+}
+.nav-menu.show {
+    display: flex;
+}
+.nav-menu a {
+    font-family: 'Funnel Sans', sans-serif;
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 15px 0;
+}
+.nav-menu a:hover {
+    background-color: var(--primary-color);
+}
+
+
+main {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+main h1 {
+    font-family: 'Funnel Sans', sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: var(--gallery-text-color);
+}
+.temple-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+}
+.temple-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--card-background);
+    border-radius: 8PX;
+    box-shadow: 0 4PX 10PX rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.temple-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+.temple-card img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+}
+.temple-card figcaption {
+    margin: 15px 10px;
+    /*color: var(--gallery-text-color);*/
+    font-size: 1.05rem;
+    font-weight: 500;
+}
+
+
+footer {
+
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+
+}
+
+footer p {
+
+    margin: .3rem 0;
+
+}
+
+#lastModified {
+
+    font-size: .9rem;
+
+}
