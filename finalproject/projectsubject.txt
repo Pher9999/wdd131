@@ -1,8 +1,8 @@
 Chris Riordan
 WDD131
 
-Subject: 
+Subject: Homelab setup 
 
-Content:
+Content: Current setup and why, and what future plans
 
-Reason:
+Reason: To share how to do things at home to save money in the long run. 
