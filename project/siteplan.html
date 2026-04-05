@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Chris Riordan">
-    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals | Chris Riordan | WDD131 - Project home page">
+    <meta name="description"
+        content="WDD 131 – Dynamic Web Fundamentals | Chris Riordan | WDD131 - Project siteplan page">
     <link rel="stylesheet" href="styles/base.css">
-    <title> WDD 131 – Dynamic Web Fundamentals – Chris Riordan </title>
+    <link rel="stylesheet" href="styles/base-large.css">
+    <title> Homelab setup – Chris Riordan </title>
     <script src="scripts/getdates.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,51 +19,71 @@
 
 <body>
     <header>
-        <span id="course-title"> WDD 131 - Dynamic Web Fundamentals</span>
-        <nav>
-            <a href="temples.html">Special Temples</a>
-            <a href="https://byupw.instructure.com/" target="_blank"> Canvas </a>
-            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7"
-                target="_blank"> Scripture</a>
-            <a href="finalproject/">Final Project</a>
+        <span class="site-title"><a href="siteplan.html">Site Plan</a></span>
+        <button id="menu-button" aria-label="Open Menu">☰</button>
+        <nav class="nav-menu" id="nav-menu">
+            <a href="index.html">Home</a>
+            <a href="servers.html#old" id="old">Old</a>
+            <a href="servers.html#new" id="new">New</a>
+            <a href="servers.html#large" id="large">Large</a>
+            <a href="servers.html#small" id="small">Small</a>
         </nav>
     </header>
     <main>
-        <h1>Chris Riordan</h1>
-        <section class="card">
-            <h2>About Me</h2>
-            <div class="about-content">
-                <p>My name is Chris Riordan, Currently living Mississippi Gulf coast, working full time and getting a
-                    degree from BYU Pathway. The temple list below is special, it's the order of which temples I have
-                    been to. Boston before I was a member but during it's open house. Atlanta where I got my endowments,
-                    and Memphis where I was sealed to my wife.</p>
-                <img src="images/profile.jpg" alt="profile picture">
-            </div>
+        <h1> Site Plan</h1>
+        <div class="card">
+            <h2>Site Purpose</h2>
+            <p>My home lab is currently in the early stages of development. I have a few servers that I am using for
+                various projects, but I am still in the process of setting up my network and organizing my
+                equipment.
+                I have a few ideas for how I want to set up my lab, but I am still working on the details. I am
+                planning on using a combination of physical servers and virtual machines to create a flexible and
+                scalable environment for testing and learning.</p>
 
-            <h3>Mississippi, USA</h3>
-            <div class="location-content">
-                <figure><img src="images/flag_of_mississippi.png" alt="State of Mississippi Flag">
-                    <figcaption>Mississippi Flag</figcaption>
-                </figure>
-                <p>The Magnolia State, Birthplace of Elvis, and Oprah. </p>
-            </div>
-        </section>
-        <section class="card">
-            <h2>Web Development Resources</h2>
-
-            <ul class="resources">
-                <li><a href="https://byui-cse.github.io/wdd131-ww-course/">WDD131 Course work</a></li>
-                <li><a href="https://www.w3schools.com/" title="W3Schools">W3Schools</a></li>
-                <li><a href="https://daily.dev/" title="Daily.dev Developer News App">Daily.dev Developer News App</a>
+        </div>
+        <div class="card">
+            <h2>Why would someone have a home lab?</h2>
+            <ul>
+                <li>Learning and experimentation: A home lab provides a safe and controlled environment for individuals
+                    to learn and experiment with new technologies, software, and configurations without the risk of
+                    affecting production systems.</li>
+                <li>Testing and development: It allows users to test new applications, updates, or configurations before
+                    deploying them in a live environment, ensuring stability and compatibility.</li>
+                <li>Networking practice: A home lab can be used to practice networking skills, such as setting up
+                    routers, switches, firewalls, and other network devices, which is essential for IT professionals.
                 </li>
-                <li><a href="https://www.geeksforgeeks.org/" title="Programming learning">Geeks for Geeks learning</a>
-                </li>
+                <li>Virtualization and containerization: Users can explore virtualization technologies like VMware or
+                    Hyper-V, as well as containerization platforms like Docker and Kubernetes, to understand how they
+                    work and how to manage them effectively.</li>
+                <li>Personal projects: A home lab can be a space for personal projects, such as hosting a website,
+                    running a media server, or experimenting with home automation systems.</li>
             </ul>
-        </section>
+
+        </div>
+        <div class="card">
+            <h2>Servers</h2>
+            <ul>
+                <li>K2S0 - Router/firewall</li>
+                <li>MCP - Main file server</li>
+                <li>Xana - Media Server</li>
+                <li>Joshua - Development Server</li>
+                <li>Johnny 5 - Desktop Computer</li>
+                <li>R2D2 - Laptop</li>
+                <li>C3P0 - Development Server</li>
+                <li>HAL - AI Assistant</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h2>Network</h2>
+            <ul>
+                <li>Core Switch - 10/100/1000/10G/40G/li>
+                <li>TP-Link EAP653 - Wireless Access Point</li>
+            </ul>
+        </div>
     </main>
     <footer>
         <p><span id="currentyear"></span> Chris Riordan | Mississippi, USA</p>
-        <p id="lastModified"></p>
+        <p id="lastmodified"></p>
     </footer>
 </body>
 
