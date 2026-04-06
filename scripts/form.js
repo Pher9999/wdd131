@@ -42,3 +42,16 @@ const products = [
         averagerating: 5.0
     }
 ];
+
+function populateProducts() {
+    const productSelect = document.querySelector("#productName");
+
+    products.forEach((product) => {
+        const option = document.createElement("option");
+        option.value = product.id;
+        option.textContent = product.name;
+        productSelect.appendChild(option);
+    });
+}
+
+populateProducts();
