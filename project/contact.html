@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Chris Riordan">
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals | Chris Riordan | WDD131 - Project index page">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/base-large.css">
+    <title> Homelab setup – Chris Riordan </title>
+    <script src="scripts/getdates.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <span class="Welcome">Contact</span>
+        <button id="menu-button" aria-label="Open Menu">☰</button>
+        <nav class="nav-menu" id="nav-menu">
+            <a href="index.html" id="home">Home</a>
+            <a href="servers.html" id="servers">Servers</a>
+            <a href="contact.html" id="contact">Contact</a>
+            <a href="siteplan.html" id="site">Site Plan</a>
+        </nav>
+    </header>
+    <main>
+        <h1> Contact Information</h1>
+        <div class="card">
+            <h2>Purpose</h2>
+            <p>
+            <form action="">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message"></textarea><br>
+                <input type="submit" value="Submit">
+            </form>
+            </p>
+
+        </div>
+
+    </main>
+    <footer>
+        <p><span id="currentyear"></span> Chris Riordan | Mississippi, USA</p>
+        <p id="lastmodified"></p>
+    </footer>
+</body>
+
+</html>

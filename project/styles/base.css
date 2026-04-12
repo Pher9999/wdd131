@@ -32,6 +32,11 @@ header {
     align-items: center;
     padding: 16px 20px;
     position: relative;
+
+}
+
+header a:visited {
+    color: var(--text-color);
 }
 
 h1,
@@ -47,7 +52,7 @@ h3,
 
     display: block;
     background-color: var(--primary-color);
-    color: white;
+    color: var(--text-color);
     text-align: center;
     padding: 1.5rem;
     font-size: 1.8rem;
@@ -59,13 +64,13 @@ nav {
     display: flex;
     justify-content: space-around;
     background-color: var(--secondary-color);
-    color: white;
+    color: var(--text-color);
 
 }
 
 nav a {
 
-    color: white;
+    color: var(--text-color);
     text-decoration: none;
     padding: 1rem;
     flex: 1;
@@ -75,9 +80,13 @@ nav a {
 }
 
 nav a:hover {
-
+    color: var(--text-color);
     background-color: #555;
 
+}
+
+nav a:visited {
+    color: var(--text-color);
 }
 
 header .site-title {
