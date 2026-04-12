@@ -92,6 +92,11 @@ developmentServersLink.addEventListener("click", () => {
     createServerCard(developmentServers);
 });
 
+mediaServersLink.addEventListener("click", () => {
+    document.getElementById("server-cards").innerHTML = "";
+    createServerCard(mediaServers);
+});
+
 
 function createServerCard(filteredServers) {
     document.getElementById("server-cards").innerHTML = "";
