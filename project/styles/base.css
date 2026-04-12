@@ -157,13 +157,13 @@ main h1 {
     color: var(--gallery-text-color);
 }
 
-.temple-grid {
+.server-grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 25px;
 }
 
-.temple-cards {
+.server-cards {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -175,29 +175,30 @@ main h1 {
     margin: 0 10px;
 }
 
-.temple-cards:hover {
+.server-cards:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
-.temple-cards img {
+.server-cards img {
     width: 100%;
     height: auto;
     aspect-ratio: 3 / 2;
     object-fit: cover;
 }
 
-.temple-cards span {
+.server-cards span {
     margin: 0;
     color: var(--gallery-text-color);
     font-size: 1rem;
     font-weight: 500;
 }
 
-.temple-cards h3 {
+.server-cards h2 {
+    background-color: var(--primary-color);
     text-align: center;
     font-size: 1.2rem;
-    color: var(--gallery-text-color);
+    color: var(--text-color);
 }
 
 

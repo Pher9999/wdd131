@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/base-large.css">
     <title> Homelab setup – Chris Riordan </title>
-    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/servers.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap"
@@ -29,51 +29,16 @@
     </header>
     <main>
         <h1> Servers</h1>
-        <div class="card">
-            <h2>K2S0 - Router/firewall</h2>
-            <p>Supermicro server running Proxmox VE. Running Opensense in a VM for firewall and router functionality.
-                Also running PiHole in a VM for network wide ad blocking. Container for DNS server, Omada to manage
-                wireless access points.</p>
+        <div class="server-grid" id="server-cards">
         </div>
-        <div class="card">
-            <h2>MCP - Main file server</h2>
-            <p>Supermicro server running TrueNas. 2 Chassis total of 60 drives. Total storage capacity: 204TB.
-                Running various Docker containers for core services for other services and servers, such as databases,
-                and general management interfaces.
-            </p>
-        </div>
-        <div class="card">
-            <h2>Xana - Media Server</h2>
-            <p>Supermicro server running Proxmox VE. Running Emby for media server functionality.</p>
-        </div>
-        <div class="card">
-            <h2>Joshua - Development Server</h2>
-            <p>Supermicro server running Proxmox VE. Running various VMs for development and testing purposes.</p>
-        </div>
-        <div class="card">
-            <h2>Johnny 5 - Desktop Computer</h2>
-            <p>Custom built desktop computer running Windows 11. Used for general computing and gaming.</p>
-        </div>
-
-        <div class="card">
-            <h2>R2D2 - Laptop</h2>
-            <p>Dell XPS 15 running Windows 11. Used for general computing and development on the go.</p>
-        </div>
-        <div class="card">
-            <h2>C3P0 - Development Server</h2>
-            <p>Custom built server running Proxmox VE. Used for development and testing purposes.</p>
-        </div>
-        <div class="card">
-            <h2>HAL - AI Assistant</h2>
-            <p>Custom built server running Proxmox VE. Running various AI models for personal use and experimentation.
-            </p>
-        </div>
-        <div class="card">
+        <p><br></p>
+        <div class="server-cards">
             <h2>Network</h2>
             <ul>
                 <li>Core Switch - 10/100/1000/10G/40G</li>
                 <li>TP-Link EAP653 - Wireless Access Point</li>
             </ul>
+        </div>
         </div>
     </main>
     <footer>
